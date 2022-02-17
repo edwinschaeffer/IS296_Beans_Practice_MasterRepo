@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.Scope;
 
 import com.example.controllers.DatabaseRepoImpl;
@@ -13,6 +15,7 @@ import com.example.vo.IPRange;
 
 @SpringBootApplication
 @ComponentScan("com.example")
+@ImportResource("classpath:beans.xml")
 public class DemoSpringBeansConfig {
 
 	/*

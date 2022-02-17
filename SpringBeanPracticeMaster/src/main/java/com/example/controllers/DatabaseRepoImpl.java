@@ -8,7 +8,6 @@ import com.example.vo.IPRange;
 
 // @Component, @Service, @Controller, @Repository are the same
 
-@Component
 public class DatabaseRepoImpl {
 	
     private IPRange ipr;
